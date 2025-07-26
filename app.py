@@ -33,7 +33,7 @@ mri_result = st.selectbox("MRI Result Abnormality", options=[0, 1])
 follow_up = st.selectbox("Follow-Up Required?", options=[0, 1])
 
 # Button to predict
-if st.button("Predict Follow-up Requirement"):
+if st.button("Predict Tumor Type"):
     input_data = np.array([[
         age,
         0 if gender == "Female" else 1,
